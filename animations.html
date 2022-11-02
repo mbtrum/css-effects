@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animations</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="general.css">
+    <style>
+
+
+        /* Animation: card fly-in animation */
+        @keyframes card-flyin {
+            0% {left: -1000px; }
+            100% {left: 0;}
+        }       
+
+        .card-img {
+            position:relative;            
+            left: 0;   
+            animation-name: card-flyin; 
+            animation-duration: 0.5s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Animations Demo
+        </h1>
+
+        <ul class="flex-nav">
+            <li><a href="transitions.html">Tranitions</a></li>
+            <li><a href="transformations.html">Transformations</a></li>
+            <li><a href="animations.html">Animations</a></li>
+        </ul>
+
+        <h2>Card Animation:</h2>
+
+        <ul class="flex-list">
+            <li class="card">
+                <img src="./images/cake1.jpg" alt="cake" class="card-img">
+            </li>
+            <li class="card">
+                <img src="./images/cake2.jpg" alt="cake" class="card-img">
+            </li>
+            <li class="card">
+                <img src="./images/cake3.jpg" alt="cake" class="card-img">
+            </li>            
+        </ul>
+
+    </div>
+    
+</body>
+</html>

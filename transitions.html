@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Transitions</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="general.css">
+    <style> 
+
+        /* Transition 1: hover transition */ 
+        a.hover-btn {
+            color: black;
+            padding: 10px 15px;
+            text-decoration:none;
+            border-radius: 5px;
+            
+            transition-property: background-color;
+            transition-duration: 0.2s;
+        }
+
+        a.hover-btn:hover {                       
+            background-color: lightgray;
+        }
+
+        /* Transition 2: card transition */
+        .card-img {
+            filter:brightness(100%);
+            
+            transition: filter 0.5s;
+        }
+
+        .card-img:hover {
+            filter:brightness(75%);           
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Transitions Demo
+        </h1>
+
+        <ul class="flex-nav">
+            <li><a href="transitions.html">Tranitions</a></li>
+            <li><a href="transformations.html">Transformations</a></li>
+            <li><a href="animations.html">Animations</a></li>
+        </ul>
+
+
+        <h2>Menu Transition (0.2s):</h2>
+    
+        <ul class="flex-nav">
+            <li>
+                <a href="#" class="hover-btn">Home</a>
+            </li>
+            <li>
+                <a href="#" class="hover-btn">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="hover-btn">Contact</a>
+            </li>            
+        </ul>
+
+        <h2>Card Transition (0.5s):</h2>
+
+        <ul class="flex-list">
+            <li class="card">
+                <img src="./images/cake1.jpg" alt="cake" class="card-img">
+            </li>
+            <li class="card">
+                <img src="./images/cake2.jpg" alt="cake" class="card-img">
+            </li>
+            <li class="card">
+                <img src="./images/cake3.jpg" alt="cake" class="card-img">
+            </li>            
+        </ul>
+    </div>
+    
+</body>
+</html>

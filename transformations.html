@@ -11,13 +11,14 @@
         /* Transform 1: card tranformation */
         .card-img {
             filter:brightness(100%);
-            transition-property: filter, border-radius;
-            transition-duration:  0.5s, 0.5s;
+
+            transition-property: filter, border-radius, transform;
+            transition-duration:  0.5s, 0.5s, 0.5s;
         }
 
         .card-img:hover {
             filter:brightness(80%);
-            border-radius: 5px;
+            border-radius: 15px;
             transform: scale(1.05);
             cursor: pointer;
         }
